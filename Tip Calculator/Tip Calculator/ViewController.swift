@@ -69,6 +69,12 @@ class ViewController: UIViewController {
     
     func clear(){
         
+        
+        txtMealCost.text = ""
+        txtTipPercentage.text = ""
+        
+        lblTip.text = "Tip: $0.00"
+        lblTipTotal.text = "$0.00"
     }
 }
 
