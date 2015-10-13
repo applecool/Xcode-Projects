@@ -67,6 +67,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="258" width="335" height="61"/>
                                 </variation>
+                                <connections>
+                                    <action selector="btnCalculateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DrX-x6-bq9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwn-FL-dGP">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -79,6 +82,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="335" width="335" height="61"/>
                                 </variation>
+                                <connections>
+                                    <action selector="btnClearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tV-GW-GFV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBX-E7-n4H">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -130,6 +136,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="lblTip" destination="4ww-oG-ifL" id="HZB-so-h3m"/>
+                        <outlet property="lblTipTotal" destination="njh-pK-Dx3" id="Jlk-Nz-GVh"/>
                         <outlet property="txtMealCost" destination="F0p-wd-Kvc" id="BD4-pE-Y5k"/>
                         <outlet property="txtTipPercentage" destination="AOe-BC-Gxp" id="4PO-sO-5KA"/>
                     </connections>

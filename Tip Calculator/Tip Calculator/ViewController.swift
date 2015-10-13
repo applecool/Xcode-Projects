@@ -13,6 +13,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtMealCost: UITextField!
     @IBOutlet weak var txtTipPercentage: UITextField!
     
+    @IBOutlet weak var lblTip: UILabel!
+    @IBOutlet weak var lblTipTotal: UILabel!
+
+    var mealCost = ""
+    var tipPercentage = ""
+    
+    var totalTip : Float = 0.0
+    var totalMealCost : Float = 0.0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,6 +33,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func btnCalculateAction(sender: UIButton) {
+    
+        calculateTip()
+    }
 
+    @IBAction func btnClearAction(sender: UIButton) {
+        
+        clear()
+    }
+    
+    func calculateTip(){
+        
+        mealCost = txtMealCost.text!
+        tipPercentage = txtTipPercentage.text!
+        
+    }
+    
+    func clear(){
+        
+    }
 }
 
