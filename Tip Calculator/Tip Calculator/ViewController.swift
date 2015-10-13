@@ -48,6 +48,23 @@ class ViewController: UIViewController {
         mealCost = txtMealCost.text!
         tipPercentage = txtTipPercentage.text!
         
+        var fMealCost = Float(mealCost)
+        var fTipPercentage = Float(tipPercentage)
+        
+        totalTip = fMealCost! * (fTipPercentage! / 100)
+        totalMealCost = fMealCost! + totalTip
+        
+        printTip()
+        
+    }
+    
+    func printTip(){
+        
+        let formatTip = String(format: "%0.2f", totalTip)
+        let formatTotal = String(format: "%0.2f", totalMealCost)
+        
+        lblTip.text = "Tip: $\(formatTip)"
+        lblTipTotal.text = "$\(formatTotal)"
     }
     
     func clear(){
