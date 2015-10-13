@@ -51,7 +51,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="185" width="335" height="59"/>
                                 </variation>
@@ -101,7 +101,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="118" width="335" height="59"/>
                                 </variation>
