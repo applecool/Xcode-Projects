@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var txtMealCost: UITextField!
     @IBOutlet weak var txtTipPercentage: UITextField!
@@ -54,6 +54,7 @@ class ViewController: UIViewController {
         totalTip = fMealCost! * (fTipPercentage! / 100)
         totalMealCost = fMealCost! + totalTip
         
+        hideKeyboards()
         printTip()
         
     }
@@ -75,6 +76,17 @@ class ViewController: UIViewController {
         
         lblTip.text = "Tip: $0.00"
         lblTipTotal.text = "$0.00"
+        
+        hideKeyboards()
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        hideKeyboards()
+    }
+    
+    func hideKeyboards(){
+        txtMealCost.resignFirstResponder()
+        txtTipPercentage.resignFirstResponder()
     }
 }
 
