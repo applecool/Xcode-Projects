@@ -91,38 +91,47 @@ class InterfaceController: WKInterfaceController {
     func triggerTapticEngine(){
         if tapticEngineNumber == 0{
             WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Click)
+            lblLabel.setTextColor(UIColor.greenColor())
         }
         
         if tapticEngineNumber == 1{
             WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.DirectionDown)
+            lblLabel.setTextColor(UIColor.yellowColor())
         }
 
         if tapticEngineNumber == 2{
             WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.DirectionUp)
+            lblLabel.setTextColor(UIColor.redColor())
         }
         
         if tapticEngineNumber == 3{
             WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Failure)
+            lblLabel.setTextColor(UIColor.purpleColor())
         }
         
         if tapticEngineNumber == 4{
             WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Notification)
+            lblLabel.setTextColor(UIColor.blueColor())
         }
         
         if tapticEngineNumber == 5{
             WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Retry)
+            lblLabel.setTextColor(UIColor.cyanColor())
         }
         
         if tapticEngineNumber == 6{
             WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Start)
+            lblLabel.setTextColor(UIColor.magentaColor())
         }
         
         if tapticEngineNumber == 7{
             WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Stop)
+            lblLabel.setTextColor(UIColor.orangeColor())
         }
         
         if tapticEngineNumber == 8{
             WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Success)
+            lblLabel.setTextColor(UIColor.brownColor())
         }
         
         outputUpdate()
