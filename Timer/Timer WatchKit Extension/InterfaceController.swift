@@ -46,6 +46,7 @@ class InterfaceController: WKInterfaceController {
     func startTimerLog(){
         
         if isStart == 0 {
+            tmrTimer.setDate(NSDate())
             tmrTimer.start()
             btnStartStop.setTitle("Stop")
         }
