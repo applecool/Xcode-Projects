@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		629583B51BD228240090A8CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629583B41BD228240090A8CA /* AppDelegate.swift */; };
+		629583B71BD228240090A8CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629583B61BD228240090A8CA /* ViewController.swift */; };
+		629583BA1BD228240090A8CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629583B81BD228240090A8CA /* Main.storyboard */; };
+		629583BC1BD228240090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629583BB1BD228240090A8CA /* Assets.xcassets */; };
+		629583BF1BD228240090A8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629583BD1BD228240090A8CA /* LaunchScreen.storyboard */; };
+		629583CA1BD228240090A8CA /* Coffee_DeciderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629583C91BD228240090A8CA /* Coffee_DeciderTests.swift */; };
+		629583D51BD228240090A8CA /* Coffee_DeciderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629583D41BD228240090A8CA /* Coffee_DeciderUITests.swift */; };
+		629583DA1BD228240090A8CA /* Coffee Decider WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 629583D91BD228240090A8CA /* Coffee Decider WatchKit App.app */; };
+		629583E01BD228240090A8CA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629583DE1BD228240090A8CA /* Interface.storyboard */; };
+		629583E21BD228240090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629583E11BD228240090A8CA /* Assets.xcassets */; };
+		629583E91BD228250090A8CA /* Coffee Decider WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 629583E81BD228250090A8CA /* Coffee Decider WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		629583F01BD228250090A8CA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629583EF1BD228250090A8CA /* InterfaceController.swift */; };
+		629583F21BD228250090A8CA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629583F11BD228250090A8CA /* ExtensionDelegate.swift */; };
+		629583F41BD228250090A8CA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629583F31BD228250090A8CA /* NotificationController.swift */; };
+		629583F61BD228250090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629583F51BD228250090A8CA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		629583C61BD228240090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629583A91BD228240090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629583B01BD228240090A8CA;
+			remoteInfo = "Coffee Decider";
+		};
+		629583D11BD228240090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629583A91BD228240090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629583B01BD228240090A8CA;
+			remoteInfo = "Coffee Decider";
+		};
+		629583DB1BD228240090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629583A91BD228240090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629583D81BD228240090A8CA;
+			remoteInfo = "Coffee Decider WatchKit App";
+		};
+		629583EA1BD228250090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629583A91BD228240090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629583E71BD228250090A8CA;
+			remoteInfo = "Coffee Decider WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		629583FD1BD228250090A8CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				629583E91BD228250090A8CA /* Coffee Decider WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629584011BD228250090A8CA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				629583DA1BD228240090A8CA /* Coffee Decider WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		629583B11BD228240090A8CA /* Coffee Decider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Decider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629583B41BD228240090A8CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		629583B61BD228240090A8CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		629583B91BD228240090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		629583BB1BD228240090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629583BE1BD228240090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		629583C01BD228240090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629583C51BD228240090A8CA /* Coffee DeciderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee DeciderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629583C91BD228240090A8CA /* Coffee_DeciderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_DeciderTests.swift; sourceTree = "<group>"; };
+		629583CB1BD228240090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629583D01BD228240090A8CA /* Coffee DeciderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee DeciderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629583D41BD228240090A8CA /* Coffee_DeciderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_DeciderUITests.swift; sourceTree = "<group>"; };
+		629583D61BD228240090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629583D91BD228240090A8CA /* Coffee Decider WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Decider WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629583DF1BD228240090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		629583E11BD228240090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629583E31BD228240090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629583E81BD228250090A8CA /* Coffee Decider WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Coffee Decider WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629583EE1BD228250090A8CA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		629583EF1BD228250090A8CA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		629583F11BD228250090A8CA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		629583F31BD228250090A8CA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		629583F51BD228250090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629583F71BD228250090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		629583AE1BD228240090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629583C21BD228240090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629583CD1BD228240090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629583E51BD228250090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		629583A81BD228240090A8CA = {
+			isa = PBXGroup;
+			children = (
+				629583B31BD228240090A8CA /* Coffee Decider */,
+				629583C81BD228240090A8CA /* Coffee DeciderTests */,
+				629583D31BD228240090A8CA /* Coffee DeciderUITests */,
+				629583DD1BD228240090A8CA /* Coffee Decider WatchKit App */,
+				629583EC1BD228250090A8CA /* Coffee Decider WatchKit Extension */,
+				629583B21BD228240090A8CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		629583B21BD228240090A8CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				629583B11BD228240090A8CA /* Coffee Decider.app */,
+				629583C51BD228240090A8CA /* Coffee DeciderTests.xctest */,
+				629583D01BD228240090A8CA /* Coffee DeciderUITests.xctest */,
+				629583D91BD228240090A8CA /* Coffee Decider WatchKit App.app */,
+				629583E81BD228250090A8CA /* Coffee Decider WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		629583B31BD228240090A8CA /* Coffee Decider */ = {
+			isa = PBXGroup;
+			children = (
+				629583B41BD228240090A8CA /* AppDelegate.swift */,
+				629583B61BD228240090A8CA /* ViewController.swift */,
+				629583B81BD228240090A8CA /* Main.storyboard */,
+				629583BB1BD228240090A8CA /* Assets.xcassets */,
+				629583BD1BD228240090A8CA /* LaunchScreen.storyboard */,
+				629583C01BD228240090A8CA /* Info.plist */,
+			);
+			path = "Coffee Decider";
+			sourceTree = "<group>";
+		};
+		629583C81BD228240090A8CA /* Coffee DeciderTests */ = {
+			isa = PBXGroup;
+			children = (
+				629583C91BD228240090A8CA /* Coffee_DeciderTests.swift */,
+				629583CB1BD228240090A8CA /* Info.plist */,
+			);
+			path = "Coffee DeciderTests";
+			sourceTree = "<group>";
+		};
+		629583D31BD228240090A8CA /* Coffee DeciderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				629583D41BD228240090A8CA /* Coffee_DeciderUITests.swift */,
+				629583D61BD228240090A8CA /* Info.plist */,
+			);
+			path = "Coffee DeciderUITests";
+			sourceTree = "<group>";
+		};
+		629583DD1BD228240090A8CA /* Coffee Decider WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				629583DE1BD228240090A8CA /* Interface.storyboard */,
+				629583E11BD228240090A8CA /* Assets.xcassets */,
+				629583E31BD228240090A8CA /* Info.plist */,
+			);
+			path = "Coffee Decider WatchKit App";
+			sourceTree = "<group>";
+		};
+		629583EC1BD228250090A8CA /* Coffee Decider WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				629583EF1BD228250090A8CA /* InterfaceController.swift */,
+				629583F11BD228250090A8CA /* ExtensionDelegate.swift */,
+				629583F31BD228250090A8CA /* NotificationController.swift */,
+				629583F51BD228250090A8CA /* Assets.xcassets */,
+				629583F71BD228250090A8CA /* Info.plist */,
+				629583ED1BD228250090A8CA /* Supporting Files */,
+			);
+			path = "Coffee Decider WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		629583ED1BD228250090A8CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				629583EE1BD228250090A8CA /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		629583B01BD228240090A8CA /* Coffee Decider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629584021BD228250090A8CA /* Build configuration list for PBXNativeTarget "Coffee Decider" */;
+			buildPhases = (
+				629583AD1BD228240090A8CA /* Sources */,
+				629583AE1BD228240090A8CA /* Frameworks */,
+				629583AF1BD228240090A8CA /* Resources */,
+				629584011BD228250090A8CA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629583DC1BD228240090A8CA /* PBXTargetDependency */,
+			);
+			name = "Coffee Decider";
+			productName = "Coffee Decider";
+			productReference = 629583B11BD228240090A8CA /* Coffee Decider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		629583C41BD228240090A8CA /* Coffee DeciderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629584051BD228250090A8CA /* Build configuration list for PBXNativeTarget "Coffee DeciderTests" */;
+			buildPhases = (
+				629583C11BD228240090A8CA /* Sources */,
+				629583C21BD228240090A8CA /* Frameworks */,
+				629583C31BD228240090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629583C71BD228240090A8CA /* PBXTargetDependency */,
+			);
+			name = "Coffee DeciderTests";
+			productName = "Coffee DeciderTests";
+			productReference = 629583C51BD228240090A8CA /* Coffee DeciderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		629583CF1BD228240090A8CA /* Coffee DeciderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629584081BD228250090A8CA /* Build configuration list for PBXNativeTarget "Coffee DeciderUITests" */;
+			buildPhases = (
+				629583CC1BD228240090A8CA /* Sources */,
+				629583CD1BD228240090A8CA /* Frameworks */,
+				629583CE1BD228240090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629583D21BD228240090A8CA /* PBXTargetDependency */,
+			);
+			name = "Coffee DeciderUITests";
+			productName = "Coffee DeciderUITests";
+			productReference = 629583D01BD228240090A8CA /* Coffee DeciderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		629583D81BD228240090A8CA /* Coffee Decider WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629583FE1BD228250090A8CA /* Build configuration list for PBXNativeTarget "Coffee Decider WatchKit App" */;
+			buildPhases = (
+				629583D71BD228240090A8CA /* Resources */,
+				629583FD1BD228250090A8CA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629583EB1BD228250090A8CA /* PBXTargetDependency */,
+			);
+			name = "Coffee Decider WatchKit App";
+			productName = "Coffee Decider WatchKit App";
+			productReference = 629583D91BD228240090A8CA /* Coffee Decider WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		629583E71BD228250090A8CA /* Coffee Decider WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629583FA1BD228250090A8CA /* Build configuration list for PBXNativeTarget "Coffee Decider WatchKit Extension" */;
+			buildPhases = (
+				629583E41BD228250090A8CA /* Sources */,
+				629583E51BD228250090A8CA /* Frameworks */,
+				629583E61BD228250090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coffee Decider WatchKit Extension";
+			productName = "Coffee Decider WatchKit Extension";
+			productReference = 629583E81BD228250090A8CA /* Coffee Decider WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		629583A91BD228240090A8CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ShellZero;
+				TargetAttributes = {
+					629583B01BD228240090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+					629583C41BD228240090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+						TestTargetID = 629583B01BD228240090A8CA;
+					};
+					629583CF1BD228240090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+						TestTargetID = 629583B01BD228240090A8CA;
+					};
+					629583D81BD228240090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+					629583E71BD228250090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+				};
+			};
+			buildConfigurationList = 629583AC1BD228240090A8CA /* Build configuration list for PBXProject "Coffee Decider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 629583A81BD228240090A8CA;
+			productRefGroup = 629583B21BD228240090A8CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				629583B01BD228240090A8CA /* Coffee Decider */,
+				629583C41BD228240090A8CA /* Coffee DeciderTests */,
+				629583CF1BD228240090A8CA /* Coffee DeciderUITests */,
+				629583D81BD228240090A8CA /* Coffee Decider WatchKit App */,
+				629583E71BD228250090A8CA /* Coffee Decider WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		629583AF1BD228240090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629583BF1BD228240090A8CA /* LaunchScreen.storyboard in Resources */,
+				629583BC1BD228240090A8CA /* Assets.xcassets in Resources */,
+				629583BA1BD228240090A8CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629583C31BD228240090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629583CE1BD228240090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629583D71BD228240090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629583E21BD228240090A8CA /* Assets.xcassets in Resources */,
+				629583E01BD228240090A8CA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629583E61BD228250090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629583F61BD228250090A8CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		629583AD1BD228240090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629583B71BD228240090A8CA /* ViewController.swift in Sources */,
+				629583B51BD228240090A8CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629583C11BD228240090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629583CA1BD228240090A8CA /* Coffee_DeciderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629583CC1BD228240090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629583D51BD228240090A8CA /* Coffee_DeciderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629583E41BD228250090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629583F41BD228250090A8CA /* NotificationController.swift in Sources */,
+				629583F21BD228250090A8CA /* ExtensionDelegate.swift in Sources */,
+				629583F01BD228250090A8CA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		629583C71BD228240090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629583B01BD228240090A8CA /* Coffee Decider */;
+			targetProxy = 629583C61BD228240090A8CA /* PBXContainerItemProxy */;
+		};
+		629583D21BD228240090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629583B01BD228240090A8CA /* Coffee Decider */;
+			targetProxy = 629583D11BD228240090A8CA /* PBXContainerItemProxy */;
+		};
+		629583DC1BD228240090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629583D81BD228240090A8CA /* Coffee Decider WatchKit App */;
+			targetProxy = 629583DB1BD228240090A8CA /* PBXContainerItemProxy */;
+		};
+		629583EB1BD228250090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629583E71BD228250090A8CA /* Coffee Decider WatchKit Extension */;
+			targetProxy = 629583EA1BD228250090A8CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		629583B81BD228240090A8CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629583B91BD228240090A8CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		629583BD1BD228240090A8CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629583BE1BD228240090A8CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		629583DE1BD228240090A8CA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629583DF1BD228240090A8CA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		629583F81BD228250090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		629583F91BD228250090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		629583FB1BD228250090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Coffee Decider WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shellzero.inception.Coffee-Decider.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		629583FC1BD228250090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Coffee Decider WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shellzero.inception.Coffee-Decider.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		629583FF1BD228250090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Coffee_Decider_WatchKit_Extension;
+				INFOPLIST_FILE = "Coffee Decider WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shellzero.inception.Coffee-Decider.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		629584001BD228250090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Coffee_Decider_WatchKit_Extension;
+				INFOPLIST_FILE = "Coffee Decider WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shellzero.inception.Coffee-Decider.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		629584031BD228250090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Coffee Decider/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shellzero.inception.Coffee-Decider";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		629584041BD228250090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Coffee Decider/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shellzero.inception.Coffee-Decider";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		629584061BD228250090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Coffee DeciderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shellzero.inception.Coffee-DeciderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coffee Decider.app/Coffee Decider";
+			};
+			name = Debug;
+		};
+		629584071BD228250090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Coffee DeciderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shellzero.inception.Coffee-DeciderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coffee Decider.app/Coffee Decider";
+			};
+			name = Release;
+		};
+		629584091BD228250090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Coffee DeciderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shellzero.inception.Coffee-DeciderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Coffee Decider";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6295840A1BD228250090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Coffee DeciderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shellzero.inception.Coffee-DeciderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Coffee Decider";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		629583AC1BD228240090A8CA /* Build configuration list for PBXProject "Coffee Decider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629583F81BD228250090A8CA /* Debug */,
+				629583F91BD228250090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629583FA1BD228250090A8CA /* Build configuration list for PBXNativeTarget "Coffee Decider WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629583FB1BD228250090A8CA /* Debug */,
+				629583FC1BD228250090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629583FE1BD228250090A8CA /* Build configuration list for PBXNativeTarget "Coffee Decider WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629583FF1BD228250090A8CA /* Debug */,
+				629584001BD228250090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629584021BD228250090A8CA /* Build configuration list for PBXNativeTarget "Coffee Decider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629584031BD228250090A8CA /* Debug */,
+				629584041BD228250090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629584051BD228250090A8CA /* Build configuration list for PBXNativeTarget "Coffee DeciderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629584061BD228250090A8CA /* Debug */,
+				629584071BD228250090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629584081BD228250090A8CA /* Build configuration list for PBXNativeTarget "Coffee DeciderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629584091BD228250090A8CA /* Debug */,
+				6295840A1BD228250090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 629583A91BD228240090A8CA /* Project object */;
+}
