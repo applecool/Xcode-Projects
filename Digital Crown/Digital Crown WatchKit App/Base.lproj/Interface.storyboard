@@ -20,7 +20,7 @@
                                 <action selector="picPickerAction:" destination="AgC-eL-Hgc" id="Rn9-Z0-hae"/>
                             </connections>
                         </picker>
-                        <label width="136" height="25.5" alignment="left" text="Label" textAlignment="center" id="7hC-Dc-LYI"/>
+                        <label width="136" height="25.5" alignment="left" text="Click" textAlignment="center" id="7hC-Dc-LYI"/>
                     </items>
                     <connections>
                         <outlet property="lblLabel" destination="7hC-Dc-LYI" id="0OS-WN-vPc"/>

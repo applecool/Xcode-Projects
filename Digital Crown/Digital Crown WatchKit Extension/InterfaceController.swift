@@ -84,12 +84,53 @@ class InterfaceController: WKInterfaceController {
     func sliderPickerUpdate(){
         picPicker.setSelectedItemIndex(Int(sliderValue))
         
+        triggerTapticEngine()
+        
     }
     
     func triggerTapticEngine(){
         if tapticEngineNumber == 0{
-            
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Click)
         }
+        
+        if tapticEngineNumber == 1{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.DirectionDown)
+        }
+
+        if tapticEngineNumber == 2{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.DirectionUp)
+        }
+        
+        if tapticEngineNumber == 3{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Failure)
+        }
+        
+        if tapticEngineNumber == 4{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Notification)
+        }
+        
+        if tapticEngineNumber == 5{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Retry)
+        }
+        
+        if tapticEngineNumber == 6{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Start)
+        }
+        
+        if tapticEngineNumber == 7{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Stop)
+        }
+        
+        if tapticEngineNumber == 8{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Success)
+        }
+        
+        outputUpdate()
+
+    }
+    
+    func outputUpdate(){
+        lblLabel.setText("\(stringArray[tapticEngineNumber])")
     }
     
 
