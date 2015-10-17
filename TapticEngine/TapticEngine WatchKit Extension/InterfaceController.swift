@@ -25,9 +25,12 @@ class InterfaceController: WKInterfaceController {
     var incorrectAnswer0 : Int = 0
     var incorrectAnswer1 : Int = 0
     
+    var tapticEngineNumber : Int = 0
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
+        reset()
         // Configure interface objects here.
     }
 
@@ -44,18 +47,24 @@ class InterfaceController: WKInterfaceController {
     @IBAction func btnAnswer0Action() {
         if buttonCorrect == 0 {
             button0Correct()
+        }else{
+            reset()
         }
     }
     
     @IBAction func btnAnswer1Action() {
         if buttonCorrect == 1 {
             button1Correct()
+        }else {
+            reset()
         }
     }
     
     @IBAction func btnAnswer2Action() {
         if buttonCorrect == 2 {
             button2Correct()
+        }else {
+            reset()
         }
     }
     
@@ -66,6 +75,7 @@ class InterfaceController: WKInterfaceController {
         incorrectAnswer0 = Int(arc4random_uniform(5))
         incorrectAnswer1 = Int(arc4random_uniform(5))
         
+        tapticEngineNumber = Int(arc4random_uniform(9))
         incorrectAnswerCheck()
     }
     
@@ -90,7 +100,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     func printAnswer(){
-        lblLabelNumber.setText("\(randomNumber)")
+        //lblLabelNumber.setText("\(randomNumber)") for debug
     }
     
     func printButtons(){
@@ -132,6 +142,58 @@ class InterfaceController: WKInterfaceController {
     
     func triggerTaptic(){
         
+        if tapticEngineNumber == 0{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Click)
+            lblLabelNumber.setTextColor(UIColor.yellowColor())
+        }
+        if tapticEngineNumber == 1{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.DirectionUp)
+            lblLabelNumber.setTextColor(UIColor.orangeColor())
+        }
+
+        if tapticEngineNumber == 2{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.DirectionDown)
+            lblLabelNumber.setTextColor(UIColor.grayColor())
+        }
+
+        if tapticEngineNumber == 3{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Failure)
+            lblLabelNumber.setTextColor(UIColor.greenColor())
+        }
+
+        if tapticEngineNumber == 4{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Notification)
+            lblLabelNumber.setTextColor(UIColor.blueColor())
+        }
+
+        if tapticEngineNumber == 5{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Retry)
+            lblLabelNumber.setTextColor(UIColor.redColor())
+        }
+
+        if tapticEngineNumber == 6{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Success)
+            lblLabelNumber.setTextColor(UIColor.magentaColor())
+        }
+
+        if tapticEngineNumber == 7{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Start)
+            lblLabelNumber.setTextColor(UIColor.purpleColor())
+        }
+
+        if tapticEngineNumber == 8{
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Stop)
+            lblLabelNumber.setTextColor(UIColor.cyanColor())
+        }
+
+        reset()
+        
+        
+        
+    }
+    
+    func reset(){
+        randomizeNumber()
     }
     
     
