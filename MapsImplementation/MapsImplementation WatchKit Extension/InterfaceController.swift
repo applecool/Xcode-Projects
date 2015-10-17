@@ -24,7 +24,9 @@ class InterfaceController: WKInterfaceController {
         
         mapMaps.setRegion(MKCoordinateRegion(center: location, span: span))
         mapMaps.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Green)
+        //mapMaps.addAnnotation(location, withImageNamed: "Purdue University", centerOffset: CGPoint(x: 1, y: 1))
         
+        //mapMaps.addAnnotation(location, withImage: UIImage(named: "sun"), centerOffset: CGPoint(x: 1, y: 1))
         // Configure interface objects here.
     }
 
@@ -45,7 +47,8 @@ class InterfaceController: WKInterfaceController {
     }
     
     func buttonPress(){
-        
+        //mapMaps.removeAllAnnotations()
+        mapMaps.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 40.435, longitude: -86.918), span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)))
     }
 
 }
