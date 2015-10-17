@@ -43,7 +43,15 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func swtSwitchAction(value: Bool) {
-        changeTextonSlide()
+        
+        
+        if value == false{
+            changeTextonSlide()
+        } else{
+            changeTextonClick()
+        }
+        
+        
     }
     
     @IBAction func sldSliderAction(value: Float) {
@@ -53,11 +61,15 @@ class InterfaceController: WKInterfaceController {
     func changeTextonSlide(){
         btnButton.setTitle("Apple")
         lblLabel.setText("Rocks")
+        lblLabel.setTextColor(UIColor.blueColor())
+        btnButton.setBackgroundColor(UIColor.orangeColor())
+        
     }
     
     func changeTextonClick(){
         btnButton.setTitle("Love")
         lblLabel.setText("Apple")
+        btnButton.setBackgroundColor(UIColor.cyanColor())
     }
     
 }

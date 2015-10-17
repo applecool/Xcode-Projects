@@ -1,8 +1,0 @@
-Rapid prototyping with Xcode:
-
-	Make a whole bunch of designs in Xcode
-	Save all of your designs
-	Experiment a lot
-	Share your designs
-	Have some fun
-
