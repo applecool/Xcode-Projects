@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TapticEngine_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="27.5" alignment="left" text="Guess the number " id="j6p-OI-27k"/>
+                        <label width="136" alignment="left" text="?" textAlignment="center" id="7tF-jb-Ztu">
+                            <fontDescription key="font" type="system" pointSize="31"/>
+                        </label>
+                        <button width="1" height="22.5" alignment="left" title="0" id="THY-ws-zEs">
+                            <connections>
+                                <action selector="btnAnswer0Action" destination="AgC-eL-Hgc" id="peF-FS-dSO"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="22.5" alignment="left" title="1" id="1Sc-jt-52d">
+                            <connections>
+                                <action selector="btnAnswer1Action" destination="AgC-eL-Hgc" id="yvG-Mt-gid"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="22.5" alignment="left" title="2" id="aJK-3D-J2d">
+                            <connections>
+                                <action selector="btnAnswer2Action" destination="AgC-eL-Hgc" id="wRJ-h0-IMf"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btnAnswer0" destination="THY-ws-zEs" id="QFK-oN-Sx3"/>
+                        <outlet property="btnAnswer1" destination="1Sc-jt-52d" id="dge-ty-hkZ"/>
+                        <outlet property="btnAnswer2" destination="aJK-3D-J2d" id="DZN-5R-uP8"/>
+                        <outlet property="lblLabelNumber" destination="7tF-jb-Ztu" id="fdY-NT-rNK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="453" y="241"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="TapticEngine_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

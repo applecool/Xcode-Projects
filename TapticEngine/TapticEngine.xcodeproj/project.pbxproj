@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		629586441BD2AF260090A8CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629586431BD2AF260090A8CA /* AppDelegate.swift */; };
+		629586461BD2AF260090A8CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629586451BD2AF260090A8CA /* ViewController.swift */; };
+		629586491BD2AF260090A8CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629586471BD2AF260090A8CA /* Main.storyboard */; };
+		6295864B1BD2AF260090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6295864A1BD2AF260090A8CA /* Assets.xcassets */; };
+		6295864E1BD2AF260090A8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6295864C1BD2AF260090A8CA /* LaunchScreen.storyboard */; };
+		629586591BD2AF260090A8CA /* TapticEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629586581BD2AF260090A8CA /* TapticEngineTests.swift */; };
+		629586641BD2AF260090A8CA /* TapticEngineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629586631BD2AF260090A8CA /* TapticEngineUITests.swift */; };
+		629586691BD2AF260090A8CA /* TapticEngine WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 629586681BD2AF260090A8CA /* TapticEngine WatchKit App.app */; };
+		6295866F1BD2AF260090A8CA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6295866D1BD2AF260090A8CA /* Interface.storyboard */; };
+		629586711BD2AF260090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629586701BD2AF260090A8CA /* Assets.xcassets */; };
+		629586781BD2AF270090A8CA /* TapticEngine WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 629586771BD2AF270090A8CA /* TapticEngine WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6295867F1BD2AF270090A8CA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6295867E1BD2AF270090A8CA /* InterfaceController.swift */; };
+		629586811BD2AF270090A8CA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629586801BD2AF270090A8CA /* ExtensionDelegate.swift */; };
+		629586831BD2AF270090A8CA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629586821BD2AF270090A8CA /* NotificationController.swift */; };
+		629586851BD2AF270090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629586841BD2AF270090A8CA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		629586551BD2AF260090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629586381BD2AF260090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6295863F1BD2AF260090A8CA;
+			remoteInfo = TapticEngine;
+		};
+		629586601BD2AF260090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629586381BD2AF260090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6295863F1BD2AF260090A8CA;
+			remoteInfo = TapticEngine;
+		};
+		6295866A1BD2AF260090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629586381BD2AF260090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629586671BD2AF260090A8CA;
+			remoteInfo = "TapticEngine WatchKit App";
+		};
+		629586791BD2AF270090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629586381BD2AF260090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629586761BD2AF270090A8CA;
+			remoteInfo = "TapticEngine WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6295868C1BD2AF270090A8CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				629586781BD2AF270090A8CA /* TapticEngine WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629586901BD2AF270090A8CA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				629586691BD2AF260090A8CA /* TapticEngine WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		629586401BD2AF260090A8CA /* TapticEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapticEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		629586431BD2AF260090A8CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		629586451BD2AF260090A8CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		629586481BD2AF260090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6295864A1BD2AF260090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6295864D1BD2AF260090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6295864F1BD2AF260090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629586541BD2AF260090A8CA /* TapticEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapticEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		629586581BD2AF260090A8CA /* TapticEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapticEngineTests.swift; sourceTree = "<group>"; };
+		6295865A1BD2AF260090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6295865F1BD2AF260090A8CA /* TapticEngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapticEngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		629586631BD2AF260090A8CA /* TapticEngineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapticEngineUITests.swift; sourceTree = "<group>"; };
+		629586651BD2AF260090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629586681BD2AF260090A8CA /* TapticEngine WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TapticEngine WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6295866E1BD2AF260090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		629586701BD2AF260090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629586721BD2AF260090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629586771BD2AF270090A8CA /* TapticEngine WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TapticEngine WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6295867D1BD2AF270090A8CA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6295867E1BD2AF270090A8CA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		629586801BD2AF270090A8CA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		629586821BD2AF270090A8CA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		629586841BD2AF270090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629586861BD2AF270090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6295863D1BD2AF260090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629586511BD2AF260090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6295865C1BD2AF260090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629586741BD2AF270090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		629586371BD2AF260090A8CA = {
+			isa = PBXGroup;
+			children = (
+				629586421BD2AF260090A8CA /* TapticEngine */,
+				629586571BD2AF260090A8CA /* TapticEngineTests */,
+				629586621BD2AF260090A8CA /* TapticEngineUITests */,
+				6295866C1BD2AF260090A8CA /* TapticEngine WatchKit App */,
+				6295867B1BD2AF270090A8CA /* TapticEngine WatchKit Extension */,
+				629586411BD2AF260090A8CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		629586411BD2AF260090A8CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				629586401BD2AF260090A8CA /* TapticEngine.app */,
+				629586541BD2AF260090A8CA /* TapticEngineTests.xctest */,
+				6295865F1BD2AF260090A8CA /* TapticEngineUITests.xctest */,
+				629586681BD2AF260090A8CA /* TapticEngine WatchKit App.app */,
+				629586771BD2AF270090A8CA /* TapticEngine WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		629586421BD2AF260090A8CA /* TapticEngine */ = {
+			isa = PBXGroup;
+			children = (
+				629586431BD2AF260090A8CA /* AppDelegate.swift */,
+				629586451BD2AF260090A8CA /* ViewController.swift */,
+				629586471BD2AF260090A8CA /* Main.storyboard */,
+				6295864A1BD2AF260090A8CA /* Assets.xcassets */,
+				6295864C1BD2AF260090A8CA /* LaunchScreen.storyboard */,
+				6295864F1BD2AF260090A8CA /* Info.plist */,
+			);
+			path = TapticEngine;
+			sourceTree = "<group>";
+		};
+		629586571BD2AF260090A8CA /* TapticEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				629586581BD2AF260090A8CA /* TapticEngineTests.swift */,
+				6295865A1BD2AF260090A8CA /* Info.plist */,
+			);
+			path = TapticEngineTests;
+			sourceTree = "<group>";
+		};
+		629586621BD2AF260090A8CA /* TapticEngineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				629586631BD2AF260090A8CA /* TapticEngineUITests.swift */,
+				629586651BD2AF260090A8CA /* Info.plist */,
+			);
+			path = TapticEngineUITests;
+			sourceTree = "<group>";
+		};
+		6295866C1BD2AF260090A8CA /* TapticEngine WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6295866D1BD2AF260090A8CA /* Interface.storyboard */,
+				629586701BD2AF260090A8CA /* Assets.xcassets */,
+				629586721BD2AF260090A8CA /* Info.plist */,
+			);
+			path = "TapticEngine WatchKit App";
+			sourceTree = "<group>";
+		};
+		6295867B1BD2AF270090A8CA /* TapticEngine WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6295867E1BD2AF270090A8CA /* InterfaceController.swift */,
+				629586801BD2AF270090A8CA /* ExtensionDelegate.swift */,
+				629586821BD2AF270090A8CA /* NotificationController.swift */,
+				629586841BD2AF270090A8CA /* Assets.xcassets */,
+				629586861BD2AF270090A8CA /* Info.plist */,
+				6295867C1BD2AF270090A8CA /* Supporting Files */,
+			);
+			path = "TapticEngine WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6295867C1BD2AF270090A8CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6295867D1BD2AF270090A8CA /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6295863F1BD2AF260090A8CA /* TapticEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629586911BD2AF270090A8CA /* Build configuration list for PBXNativeTarget "TapticEngine" */;
+			buildPhases = (
+				6295863C1BD2AF260090A8CA /* Sources */,
+				6295863D1BD2AF260090A8CA /* Frameworks */,
+				6295863E1BD2AF260090A8CA /* Resources */,
+				629586901BD2AF270090A8CA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6295866B1BD2AF260090A8CA /* PBXTargetDependency */,
+			);
+			name = TapticEngine;
+			productName = TapticEngine;
+			productReference = 629586401BD2AF260090A8CA /* TapticEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		629586531BD2AF260090A8CA /* TapticEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629586941BD2AF270090A8CA /* Build configuration list for PBXNativeTarget "TapticEngineTests" */;
+			buildPhases = (
+				629586501BD2AF260090A8CA /* Sources */,
+				629586511BD2AF260090A8CA /* Frameworks */,
+				629586521BD2AF260090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629586561BD2AF260090A8CA /* PBXTargetDependency */,
+			);
+			name = TapticEngineTests;
+			productName = TapticEngineTests;
+			productReference = 629586541BD2AF260090A8CA /* TapticEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6295865E1BD2AF260090A8CA /* TapticEngineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629586971BD2AF270090A8CA /* Build configuration list for PBXNativeTarget "TapticEngineUITests" */;
+			buildPhases = (
+				6295865B1BD2AF260090A8CA /* Sources */,
+				6295865C1BD2AF260090A8CA /* Frameworks */,
+				6295865D1BD2AF260090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629586611BD2AF260090A8CA /* PBXTargetDependency */,
+			);
+			name = TapticEngineUITests;
+			productName = TapticEngineUITests;
+			productReference = 6295865F1BD2AF260090A8CA /* TapticEngineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		629586671BD2AF260090A8CA /* TapticEngine WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6295868D1BD2AF270090A8CA /* Build configuration list for PBXNativeTarget "TapticEngine WatchKit App" */;
+			buildPhases = (
+				629586661BD2AF260090A8CA /* Resources */,
+				6295868C1BD2AF270090A8CA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6295867A1BD2AF270090A8CA /* PBXTargetDependency */,
+			);
+			name = "TapticEngine WatchKit App";
+			productName = "TapticEngine WatchKit App";
+			productReference = 629586681BD2AF260090A8CA /* TapticEngine WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		629586761BD2AF270090A8CA /* TapticEngine WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629586891BD2AF270090A8CA /* Build configuration list for PBXNativeTarget "TapticEngine WatchKit Extension" */;
+			buildPhases = (
+				629586731BD2AF270090A8CA /* Sources */,
+				629586741BD2AF270090A8CA /* Frameworks */,
+				629586751BD2AF270090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TapticEngine WatchKit Extension";
+			productName = "TapticEngine WatchKit Extension";
+			productReference = 629586771BD2AF270090A8CA /* TapticEngine WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		629586381BD2AF260090A8CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ShellZero;
+				TargetAttributes = {
+					6295863F1BD2AF260090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+					629586531BD2AF260090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+						TestTargetID = 6295863F1BD2AF260090A8CA;
+					};
+					6295865E1BD2AF260090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+						TestTargetID = 6295863F1BD2AF260090A8CA;
+					};
+					629586671BD2AF260090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+					629586761BD2AF270090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+				};
+			};
+			buildConfigurationList = 6295863B1BD2AF260090A8CA /* Build configuration list for PBXProject "TapticEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 629586371BD2AF260090A8CA;
+			productRefGroup = 629586411BD2AF260090A8CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6295863F1BD2AF260090A8CA /* TapticEngine */,
+				629586531BD2AF260090A8CA /* TapticEngineTests */,
+				6295865E1BD2AF260090A8CA /* TapticEngineUITests */,
+				629586671BD2AF260090A8CA /* TapticEngine WatchKit App */,
+				629586761BD2AF270090A8CA /* TapticEngine WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6295863E1BD2AF260090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6295864E1BD2AF260090A8CA /* LaunchScreen.storyboard in Resources */,
+				6295864B1BD2AF260090A8CA /* Assets.xcassets in Resources */,
+				629586491BD2AF260090A8CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629586521BD2AF260090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6295865D1BD2AF260090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629586661BD2AF260090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629586711BD2AF260090A8CA /* Assets.xcassets in Resources */,
+				6295866F1BD2AF260090A8CA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629586751BD2AF270090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629586851BD2AF270090A8CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6295863C1BD2AF260090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629586461BD2AF260090A8CA /* ViewController.swift in Sources */,
+				629586441BD2AF260090A8CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629586501BD2AF260090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629586591BD2AF260090A8CA /* TapticEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6295865B1BD2AF260090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629586641BD2AF260090A8CA /* TapticEngineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629586731BD2AF270090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629586831BD2AF270090A8CA /* NotificationController.swift in Sources */,
+				629586811BD2AF270090A8CA /* ExtensionDelegate.swift in Sources */,
+				6295867F1BD2AF270090A8CA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		629586561BD2AF260090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6295863F1BD2AF260090A8CA /* TapticEngine */;
+			targetProxy = 629586551BD2AF260090A8CA /* PBXContainerItemProxy */;
+		};
+		629586611BD2AF260090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6295863F1BD2AF260090A8CA /* TapticEngine */;
+			targetProxy = 629586601BD2AF260090A8CA /* PBXContainerItemProxy */;
+		};
+		6295866B1BD2AF260090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629586671BD2AF260090A8CA /* TapticEngine WatchKit App */;
+			targetProxy = 6295866A1BD2AF260090A8CA /* PBXContainerItemProxy */;
+		};
+		6295867A1BD2AF270090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629586761BD2AF270090A8CA /* TapticEngine WatchKit Extension */;
+			targetProxy = 629586791BD2AF270090A8CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		629586471BD2AF260090A8CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629586481BD2AF260090A8CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6295864C1BD2AF260090A8CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6295864D1BD2AF260090A8CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6295866D1BD2AF260090A8CA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6295866E1BD2AF260090A8CA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		629586871BD2AF270090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		629586881BD2AF270090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6295868A1BD2AF270090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TapticEngine WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.TapticEngine.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		6295868B1BD2AF270090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TapticEngine WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.TapticEngine.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		6295868E1BD2AF270090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TapticEngine_WatchKit_Extension;
+				INFOPLIST_FILE = "TapticEngine WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.TapticEngine.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		6295868F1BD2AF270090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TapticEngine_WatchKit_Extension;
+				INFOPLIST_FILE = "TapticEngine WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.TapticEngine.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		629586921BD2AF270090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TapticEngine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.TapticEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		629586931BD2AF270090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TapticEngine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.TapticEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		629586951BD2AF270090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TapticEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.TapticEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapticEngine.app/TapticEngine";
+			};
+			name = Debug;
+		};
+		629586961BD2AF270090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TapticEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.TapticEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapticEngine.app/TapticEngine";
+			};
+			name = Release;
+		};
+		629586981BD2AF270090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TapticEngineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.TapticEngineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TapticEngine;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		629586991BD2AF270090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TapticEngineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.TapticEngineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TapticEngine;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6295863B1BD2AF260090A8CA /* Build configuration list for PBXProject "TapticEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629586871BD2AF270090A8CA /* Debug */,
+				629586881BD2AF270090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629586891BD2AF270090A8CA /* Build configuration list for PBXNativeTarget "TapticEngine WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6295868A1BD2AF270090A8CA /* Debug */,
+				6295868B1BD2AF270090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6295868D1BD2AF270090A8CA /* Build configuration list for PBXNativeTarget "TapticEngine WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6295868E1BD2AF270090A8CA /* Debug */,
+				6295868F1BD2AF270090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629586911BD2AF270090A8CA /* Build configuration list for PBXNativeTarget "TapticEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629586921BD2AF270090A8CA /* Debug */,
+				629586931BD2AF270090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629586941BD2AF270090A8CA /* Build configuration list for PBXNativeTarget "TapticEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629586951BD2AF270090A8CA /* Debug */,
+				629586961BD2AF270090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629586971BD2AF270090A8CA /* Build configuration list for PBXNativeTarget "TapticEngineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629586981BD2AF270090A8CA /* Debug */,
+				629586991BD2AF270090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 629586381BD2AF260090A8CA /* Project object */;
+}
