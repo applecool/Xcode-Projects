@@ -49,6 +49,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func sldSliderAction(value: Float) {
     }
     
+    //test
     func changeTextonSlide(){
         btnButton.setTitle("Apple")
         lblLabel.setText("Rocks")
