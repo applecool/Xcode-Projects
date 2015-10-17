@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6295870A1BD307E10090A8CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629587091BD307E10090A8CA /* AppDelegate.swift */; };
+		6295870C1BD307E10090A8CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6295870B1BD307E10090A8CA /* ViewController.swift */; };
+		6295870F1BD307E10090A8CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6295870D1BD307E10090A8CA /* Main.storyboard */; };
+		629587111BD307E10090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629587101BD307E10090A8CA /* Assets.xcassets */; };
+		629587141BD307E10090A8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629587121BD307E10090A8CA /* LaunchScreen.storyboard */; };
+		6295871F1BD307E10090A8CA /* MapsImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6295871E1BD307E10090A8CA /* MapsImplementationTests.swift */; };
+		6295872A1BD307E10090A8CA /* MapsImplementationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629587291BD307E10090A8CA /* MapsImplementationUITests.swift */; };
+		6295872F1BD307E10090A8CA /* MapsImplementation WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6295872E1BD307E10090A8CA /* MapsImplementation WatchKit App.app */; };
+		629587351BD307E10090A8CA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629587331BD307E10090A8CA /* Interface.storyboard */; };
+		629587371BD307E10090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629587361BD307E10090A8CA /* Assets.xcassets */; };
+		6295873E1BD307E10090A8CA /* MapsImplementation WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6295873D1BD307E10090A8CA /* MapsImplementation WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		629587451BD307E10090A8CA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629587441BD307E10090A8CA /* InterfaceController.swift */; };
+		629587471BD307E10090A8CA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629587461BD307E10090A8CA /* ExtensionDelegate.swift */; };
+		629587491BD307E10090A8CA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629587481BD307E10090A8CA /* NotificationController.swift */; };
+		6295874B1BD307E10090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6295874A1BD307E10090A8CA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6295871B1BD307E10090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629586FE1BD307E10090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629587051BD307E10090A8CA;
+			remoteInfo = MapsImplementation;
+		};
+		629587261BD307E10090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629586FE1BD307E10090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629587051BD307E10090A8CA;
+			remoteInfo = MapsImplementation;
+		};
+		629587301BD307E10090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629586FE1BD307E10090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6295872D1BD307E10090A8CA;
+			remoteInfo = "MapsImplementation WatchKit App";
+		};
+		6295873F1BD307E10090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629586FE1BD307E10090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6295873C1BD307E10090A8CA;
+			remoteInfo = "MapsImplementation WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		629587521BD307E10090A8CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6295873E1BD307E10090A8CA /* MapsImplementation WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587561BD307E10090A8CA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6295872F1BD307E10090A8CA /* MapsImplementation WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		629587061BD307E10090A8CA /* MapsImplementation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsImplementation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		629587091BD307E10090A8CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6295870B1BD307E10090A8CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6295870E1BD307E10090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		629587101BD307E10090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629587131BD307E10090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		629587151BD307E10090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6295871A1BD307E10090A8CA /* MapsImplementationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsImplementationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6295871E1BD307E10090A8CA /* MapsImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsImplementationTests.swift; sourceTree = "<group>"; };
+		629587201BD307E10090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629587251BD307E10090A8CA /* MapsImplementationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsImplementationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		629587291BD307E10090A8CA /* MapsImplementationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsImplementationUITests.swift; sourceTree = "<group>"; };
+		6295872B1BD307E10090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6295872E1BD307E10090A8CA /* MapsImplementation WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MapsImplementation WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629587341BD307E10090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		629587361BD307E10090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629587381BD307E10090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6295873D1BD307E10090A8CA /* MapsImplementation WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MapsImplementation WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629587431BD307E10090A8CA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		629587441BD307E10090A8CA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		629587461BD307E10090A8CA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		629587481BD307E10090A8CA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6295874A1BD307E10090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6295874C1BD307E10090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		629587031BD307E10090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587171BD307E10090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587221BD307E10090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6295873A1BD307E10090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		629586FD1BD307E10090A8CA = {
+			isa = PBXGroup;
+			children = (
+				629587081BD307E10090A8CA /* MapsImplementation */,
+				6295871D1BD307E10090A8CA /* MapsImplementationTests */,
+				629587281BD307E10090A8CA /* MapsImplementationUITests */,
+				629587321BD307E10090A8CA /* MapsImplementation WatchKit App */,
+				629587411BD307E10090A8CA /* MapsImplementation WatchKit Extension */,
+				629587071BD307E10090A8CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		629587071BD307E10090A8CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				629587061BD307E10090A8CA /* MapsImplementation.app */,
+				6295871A1BD307E10090A8CA /* MapsImplementationTests.xctest */,
+				629587251BD307E10090A8CA /* MapsImplementationUITests.xctest */,
+				6295872E1BD307E10090A8CA /* MapsImplementation WatchKit App.app */,
+				6295873D1BD307E10090A8CA /* MapsImplementation WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		629587081BD307E10090A8CA /* MapsImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				629587091BD307E10090A8CA /* AppDelegate.swift */,
+				6295870B1BD307E10090A8CA /* ViewController.swift */,
+				6295870D1BD307E10090A8CA /* Main.storyboard */,
+				629587101BD307E10090A8CA /* Assets.xcassets */,
+				629587121BD307E10090A8CA /* LaunchScreen.storyboard */,
+				629587151BD307E10090A8CA /* Info.plist */,
+			);
+			path = MapsImplementation;
+			sourceTree = "<group>";
+		};
+		6295871D1BD307E10090A8CA /* MapsImplementationTests */ = {
+			isa = PBXGroup;
+			children = (
+				6295871E1BD307E10090A8CA /* MapsImplementationTests.swift */,
+				629587201BD307E10090A8CA /* Info.plist */,
+			);
+			path = MapsImplementationTests;
+			sourceTree = "<group>";
+		};
+		629587281BD307E10090A8CA /* MapsImplementationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				629587291BD307E10090A8CA /* MapsImplementationUITests.swift */,
+				6295872B1BD307E10090A8CA /* Info.plist */,
+			);
+			path = MapsImplementationUITests;
+			sourceTree = "<group>";
+		};
+		629587321BD307E10090A8CA /* MapsImplementation WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				629587331BD307E10090A8CA /* Interface.storyboard */,
+				629587361BD307E10090A8CA /* Assets.xcassets */,
+				629587381BD307E10090A8CA /* Info.plist */,
+			);
+			path = "MapsImplementation WatchKit App";
+			sourceTree = "<group>";
+		};
+		629587411BD307E10090A8CA /* MapsImplementation WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				629587441BD307E10090A8CA /* InterfaceController.swift */,
+				629587461BD307E10090A8CA /* ExtensionDelegate.swift */,
+				629587481BD307E10090A8CA /* NotificationController.swift */,
+				6295874A1BD307E10090A8CA /* Assets.xcassets */,
+				6295874C1BD307E10090A8CA /* Info.plist */,
+				629587421BD307E10090A8CA /* Supporting Files */,
+			);
+			path = "MapsImplementation WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		629587421BD307E10090A8CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				629587431BD307E10090A8CA /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		629587051BD307E10090A8CA /* MapsImplementation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629587571BD307E10090A8CA /* Build configuration list for PBXNativeTarget "MapsImplementation" */;
+			buildPhases = (
+				629587021BD307E10090A8CA /* Sources */,
+				629587031BD307E10090A8CA /* Frameworks */,
+				629587041BD307E10090A8CA /* Resources */,
+				629587561BD307E10090A8CA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629587311BD307E10090A8CA /* PBXTargetDependency */,
+			);
+			name = MapsImplementation;
+			productName = MapsImplementation;
+			productReference = 629587061BD307E10090A8CA /* MapsImplementation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		629587191BD307E10090A8CA /* MapsImplementationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6295875A1BD307E10090A8CA /* Build configuration list for PBXNativeTarget "MapsImplementationTests" */;
+			buildPhases = (
+				629587161BD307E10090A8CA /* Sources */,
+				629587171BD307E10090A8CA /* Frameworks */,
+				629587181BD307E10090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6295871C1BD307E10090A8CA /* PBXTargetDependency */,
+			);
+			name = MapsImplementationTests;
+			productName = MapsImplementationTests;
+			productReference = 6295871A1BD307E10090A8CA /* MapsImplementationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		629587241BD307E10090A8CA /* MapsImplementationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6295875D1BD307E10090A8CA /* Build configuration list for PBXNativeTarget "MapsImplementationUITests" */;
+			buildPhases = (
+				629587211BD307E10090A8CA /* Sources */,
+				629587221BD307E10090A8CA /* Frameworks */,
+				629587231BD307E10090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629587271BD307E10090A8CA /* PBXTargetDependency */,
+			);
+			name = MapsImplementationUITests;
+			productName = MapsImplementationUITests;
+			productReference = 629587251BD307E10090A8CA /* MapsImplementationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6295872D1BD307E10090A8CA /* MapsImplementation WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629587531BD307E10090A8CA /* Build configuration list for PBXNativeTarget "MapsImplementation WatchKit App" */;
+			buildPhases = (
+				6295872C1BD307E10090A8CA /* Resources */,
+				629587521BD307E10090A8CA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629587401BD307E10090A8CA /* PBXTargetDependency */,
+			);
+			name = "MapsImplementation WatchKit App";
+			productName = "MapsImplementation WatchKit App";
+			productReference = 6295872E1BD307E10090A8CA /* MapsImplementation WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6295873C1BD307E10090A8CA /* MapsImplementation WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6295874F1BD307E10090A8CA /* Build configuration list for PBXNativeTarget "MapsImplementation WatchKit Extension" */;
+			buildPhases = (
+				629587391BD307E10090A8CA /* Sources */,
+				6295873A1BD307E10090A8CA /* Frameworks */,
+				6295873B1BD307E10090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MapsImplementation WatchKit Extension";
+			productName = "MapsImplementation WatchKit Extension";
+			productReference = 6295873D1BD307E10090A8CA /* MapsImplementation WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		629586FE1BD307E10090A8CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ShellZero;
+				TargetAttributes = {
+					629587051BD307E10090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+					629587191BD307E10090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+						TestTargetID = 629587051BD307E10090A8CA;
+					};
+					629587241BD307E10090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+						TestTargetID = 629587051BD307E10090A8CA;
+					};
+					6295872D1BD307E10090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+					6295873C1BD307E10090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+				};
+			};
+			buildConfigurationList = 629587011BD307E10090A8CA /* Build configuration list for PBXProject "MapsImplementation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 629586FD1BD307E10090A8CA;
+			productRefGroup = 629587071BD307E10090A8CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				629587051BD307E10090A8CA /* MapsImplementation */,
+				629587191BD307E10090A8CA /* MapsImplementationTests */,
+				629587241BD307E10090A8CA /* MapsImplementationUITests */,
+				6295872D1BD307E10090A8CA /* MapsImplementation WatchKit App */,
+				6295873C1BD307E10090A8CA /* MapsImplementation WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		629587041BD307E10090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629587141BD307E10090A8CA /* LaunchScreen.storyboard in Resources */,
+				629587111BD307E10090A8CA /* Assets.xcassets in Resources */,
+				6295870F1BD307E10090A8CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587181BD307E10090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587231BD307E10090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6295872C1BD307E10090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629587371BD307E10090A8CA /* Assets.xcassets in Resources */,
+				629587351BD307E10090A8CA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6295873B1BD307E10090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6295874B1BD307E10090A8CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		629587021BD307E10090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6295870C1BD307E10090A8CA /* ViewController.swift in Sources */,
+				6295870A1BD307E10090A8CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587161BD307E10090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6295871F1BD307E10090A8CA /* MapsImplementationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587211BD307E10090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6295872A1BD307E10090A8CA /* MapsImplementationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587391BD307E10090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629587491BD307E10090A8CA /* NotificationController.swift in Sources */,
+				629587471BD307E10090A8CA /* ExtensionDelegate.swift in Sources */,
+				629587451BD307E10090A8CA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6295871C1BD307E10090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629587051BD307E10090A8CA /* MapsImplementation */;
+			targetProxy = 6295871B1BD307E10090A8CA /* PBXContainerItemProxy */;
+		};
+		629587271BD307E10090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629587051BD307E10090A8CA /* MapsImplementation */;
+			targetProxy = 629587261BD307E10090A8CA /* PBXContainerItemProxy */;
+		};
+		629587311BD307E10090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6295872D1BD307E10090A8CA /* MapsImplementation WatchKit App */;
+			targetProxy = 629587301BD307E10090A8CA /* PBXContainerItemProxy */;
+		};
+		629587401BD307E10090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6295873C1BD307E10090A8CA /* MapsImplementation WatchKit Extension */;
+			targetProxy = 6295873F1BD307E10090A8CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6295870D1BD307E10090A8CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6295870E1BD307E10090A8CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		629587121BD307E10090A8CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629587131BD307E10090A8CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		629587331BD307E10090A8CA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629587341BD307E10090A8CA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6295874D1BD307E10090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6295874E1BD307E10090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		629587501BD307E10090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MapsImplementation WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.MapsImplementation.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		629587511BD307E10090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MapsImplementation WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.MapsImplementation.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		629587541BD307E10090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MapsImplementation_WatchKit_Extension;
+				INFOPLIST_FILE = "MapsImplementation WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.MapsImplementation.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		629587551BD307E10090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MapsImplementation_WatchKit_Extension;
+				INFOPLIST_FILE = "MapsImplementation WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.MapsImplementation.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		629587581BD307E10090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MapsImplementation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.MapsImplementation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		629587591BD307E10090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MapsImplementation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.MapsImplementation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6295875B1BD307E10090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MapsImplementationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.MapsImplementationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapsImplementation.app/MapsImplementation";
+			};
+			name = Debug;
+		};
+		6295875C1BD307E10090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MapsImplementationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.MapsImplementationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapsImplementation.app/MapsImplementation";
+			};
+			name = Release;
+		};
+		6295875E1BD307E10090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MapsImplementationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.MapsImplementationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MapsImplementation;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6295875F1BD307E10090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MapsImplementationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.MapsImplementationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MapsImplementation;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		629587011BD307E10090A8CA /* Build configuration list for PBXProject "MapsImplementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6295874D1BD307E10090A8CA /* Debug */,
+				6295874E1BD307E10090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6295874F1BD307E10090A8CA /* Build configuration list for PBXNativeTarget "MapsImplementation WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629587501BD307E10090A8CA /* Debug */,
+				629587511BD307E10090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629587531BD307E10090A8CA /* Build configuration list for PBXNativeTarget "MapsImplementation WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629587541BD307E10090A8CA /* Debug */,
+				629587551BD307E10090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629587571BD307E10090A8CA /* Build configuration list for PBXNativeTarget "MapsImplementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629587581BD307E10090A8CA /* Debug */,
+				629587591BD307E10090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6295875A1BD307E10090A8CA /* Build configuration list for PBXNativeTarget "MapsImplementationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6295875B1BD307E10090A8CA /* Debug */,
+				6295875C1BD307E10090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6295875D1BD307E10090A8CA /* Build configuration list for PBXNativeTarget "MapsImplementationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6295875E1BD307E10090A8CA /* Debug */,
+				6295875F1BD307E10090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 629586FE1BD307E10090A8CA /* Project object */;
+}
