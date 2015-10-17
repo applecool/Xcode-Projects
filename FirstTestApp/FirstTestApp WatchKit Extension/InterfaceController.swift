@@ -17,6 +17,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var sldSlider: WKInterfaceSlider!
     @IBOutlet var lblLabel: WKInterfaceLabel!
     
+    var btnCount : Int = 1
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -35,7 +36,10 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func btnButtonAction() {
+        if btnCount == 1{
         changeTextonClick()
+        }
+        
     }
     
     @IBAction func swtSwitchAction(value: Bool) {
