@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		629587D81BD324150090A8CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629587D71BD324150090A8CA /* AppDelegate.swift */; };
+		629587DA1BD324150090A8CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629587D91BD324150090A8CA /* ViewController.swift */; };
+		629587DD1BD324150090A8CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629587DB1BD324150090A8CA /* Main.storyboard */; };
+		629587DF1BD324150090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629587DE1BD324150090A8CA /* Assets.xcassets */; };
+		629587E21BD324150090A8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629587E01BD324150090A8CA /* LaunchScreen.storyboard */; };
+		629587ED1BD324150090A8CA /* ISSTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629587EC1BD324150090A8CA /* ISSTrackerTests.swift */; };
+		629587F81BD324150090A8CA /* ISSTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629587F71BD324150090A8CA /* ISSTrackerUITests.swift */; };
+		629587FD1BD324150090A8CA /* ISSTracker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 629587FC1BD324150090A8CA /* ISSTracker WatchKit App.app */; };
+		629588031BD324150090A8CA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629588011BD324150090A8CA /* Interface.storyboard */; };
+		629588051BD324150090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629588041BD324150090A8CA /* Assets.xcassets */; };
+		6295880C1BD324150090A8CA /* ISSTracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6295880B1BD324150090A8CA /* ISSTracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		629588131BD324150090A8CA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629588121BD324150090A8CA /* InterfaceController.swift */; };
+		629588151BD324150090A8CA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629588141BD324150090A8CA /* ExtensionDelegate.swift */; };
+		629588171BD324150090A8CA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629588161BD324150090A8CA /* NotificationController.swift */; };
+		629588191BD324150090A8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629588181BD324150090A8CA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		629587E91BD324150090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629587CC1BD324150090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629587D31BD324150090A8CA;
+			remoteInfo = ISSTracker;
+		};
+		629587F41BD324150090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629587CC1BD324150090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629587D31BD324150090A8CA;
+			remoteInfo = ISSTracker;
+		};
+		629587FE1BD324150090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629587CC1BD324150090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629587FB1BD324150090A8CA;
+			remoteInfo = "ISSTracker WatchKit App";
+		};
+		6295880D1BD324150090A8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629587CC1BD324150090A8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6295880A1BD324150090A8CA;
+			remoteInfo = "ISSTracker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		629588201BD324160090A8CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6295880C1BD324150090A8CA /* ISSTracker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629588241BD324160090A8CA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				629587FD1BD324150090A8CA /* ISSTracker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		629587D41BD324150090A8CA /* ISSTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		629587D71BD324150090A8CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		629587D91BD324150090A8CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		629587DC1BD324150090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		629587DE1BD324150090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629587E11BD324150090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		629587E31BD324150090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629587E81BD324150090A8CA /* ISSTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISSTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		629587EC1BD324150090A8CA /* ISSTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSTrackerTests.swift; sourceTree = "<group>"; };
+		629587EE1BD324150090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629587F31BD324150090A8CA /* ISSTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISSTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		629587F71BD324150090A8CA /* ISSTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSTrackerUITests.swift; sourceTree = "<group>"; };
+		629587F91BD324150090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629587FC1BD324150090A8CA /* ISSTracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ISSTracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629588021BD324150090A8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		629588041BD324150090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629588061BD324150090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6295880B1BD324150090A8CA /* ISSTracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ISSTracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629588111BD324150090A8CA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		629588121BD324150090A8CA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		629588141BD324150090A8CA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		629588161BD324150090A8CA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		629588181BD324150090A8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6295881A1BD324150090A8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		629587D11BD324150090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587E51BD324150090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587F01BD324150090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629588081BD324150090A8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		629587CB1BD324150090A8CA = {
+			isa = PBXGroup;
+			children = (
+				629587D61BD324150090A8CA /* ISSTracker */,
+				629587EB1BD324150090A8CA /* ISSTrackerTests */,
+				629587F61BD324150090A8CA /* ISSTrackerUITests */,
+				629588001BD324150090A8CA /* ISSTracker WatchKit App */,
+				6295880F1BD324150090A8CA /* ISSTracker WatchKit Extension */,
+				629587D51BD324150090A8CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		629587D51BD324150090A8CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				629587D41BD324150090A8CA /* ISSTracker.app */,
+				629587E81BD324150090A8CA /* ISSTrackerTests.xctest */,
+				629587F31BD324150090A8CA /* ISSTrackerUITests.xctest */,
+				629587FC1BD324150090A8CA /* ISSTracker WatchKit App.app */,
+				6295880B1BD324150090A8CA /* ISSTracker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		629587D61BD324150090A8CA /* ISSTracker */ = {
+			isa = PBXGroup;
+			children = (
+				629587D71BD324150090A8CA /* AppDelegate.swift */,
+				629587D91BD324150090A8CA /* ViewController.swift */,
+				629587DB1BD324150090A8CA /* Main.storyboard */,
+				629587DE1BD324150090A8CA /* Assets.xcassets */,
+				629587E01BD324150090A8CA /* LaunchScreen.storyboard */,
+				629587E31BD324150090A8CA /* Info.plist */,
+			);
+			path = ISSTracker;
+			sourceTree = "<group>";
+		};
+		629587EB1BD324150090A8CA /* ISSTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				629587EC1BD324150090A8CA /* ISSTrackerTests.swift */,
+				629587EE1BD324150090A8CA /* Info.plist */,
+			);
+			path = ISSTrackerTests;
+			sourceTree = "<group>";
+		};
+		629587F61BD324150090A8CA /* ISSTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				629587F71BD324150090A8CA /* ISSTrackerUITests.swift */,
+				629587F91BD324150090A8CA /* Info.plist */,
+			);
+			path = ISSTrackerUITests;
+			sourceTree = "<group>";
+		};
+		629588001BD324150090A8CA /* ISSTracker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				629588011BD324150090A8CA /* Interface.storyboard */,
+				629588041BD324150090A8CA /* Assets.xcassets */,
+				629588061BD324150090A8CA /* Info.plist */,
+			);
+			path = "ISSTracker WatchKit App";
+			sourceTree = "<group>";
+		};
+		6295880F1BD324150090A8CA /* ISSTracker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				629588121BD324150090A8CA /* InterfaceController.swift */,
+				629588141BD324150090A8CA /* ExtensionDelegate.swift */,
+				629588161BD324150090A8CA /* NotificationController.swift */,
+				629588181BD324150090A8CA /* Assets.xcassets */,
+				6295881A1BD324150090A8CA /* Info.plist */,
+				629588101BD324150090A8CA /* Supporting Files */,
+			);
+			path = "ISSTracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		629588101BD324150090A8CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				629588111BD324150090A8CA /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		629587D31BD324150090A8CA /* ISSTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629588251BD324160090A8CA /* Build configuration list for PBXNativeTarget "ISSTracker" */;
+			buildPhases = (
+				629587D01BD324150090A8CA /* Sources */,
+				629587D11BD324150090A8CA /* Frameworks */,
+				629587D21BD324150090A8CA /* Resources */,
+				629588241BD324160090A8CA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629587FF1BD324150090A8CA /* PBXTargetDependency */,
+			);
+			name = ISSTracker;
+			productName = ISSTracker;
+			productReference = 629587D41BD324150090A8CA /* ISSTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		629587E71BD324150090A8CA /* ISSTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629588281BD324160090A8CA /* Build configuration list for PBXNativeTarget "ISSTrackerTests" */;
+			buildPhases = (
+				629587E41BD324150090A8CA /* Sources */,
+				629587E51BD324150090A8CA /* Frameworks */,
+				629587E61BD324150090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629587EA1BD324150090A8CA /* PBXTargetDependency */,
+			);
+			name = ISSTrackerTests;
+			productName = ISSTrackerTests;
+			productReference = 629587E81BD324150090A8CA /* ISSTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		629587F21BD324150090A8CA /* ISSTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6295882B1BD324160090A8CA /* Build configuration list for PBXNativeTarget "ISSTrackerUITests" */;
+			buildPhases = (
+				629587EF1BD324150090A8CA /* Sources */,
+				629587F01BD324150090A8CA /* Frameworks */,
+				629587F11BD324150090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629587F51BD324150090A8CA /* PBXTargetDependency */,
+			);
+			name = ISSTrackerUITests;
+			productName = ISSTrackerUITests;
+			productReference = 629587F31BD324150090A8CA /* ISSTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		629587FB1BD324150090A8CA /* ISSTracker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629588211BD324160090A8CA /* Build configuration list for PBXNativeTarget "ISSTracker WatchKit App" */;
+			buildPhases = (
+				629587FA1BD324150090A8CA /* Resources */,
+				629588201BD324160090A8CA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6295880E1BD324150090A8CA /* PBXTargetDependency */,
+			);
+			name = "ISSTracker WatchKit App";
+			productName = "ISSTracker WatchKit App";
+			productReference = 629587FC1BD324150090A8CA /* ISSTracker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6295880A1BD324150090A8CA /* ISSTracker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6295881D1BD324160090A8CA /* Build configuration list for PBXNativeTarget "ISSTracker WatchKit Extension" */;
+			buildPhases = (
+				629588071BD324150090A8CA /* Sources */,
+				629588081BD324150090A8CA /* Frameworks */,
+				629588091BD324150090A8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ISSTracker WatchKit Extension";
+			productName = "ISSTracker WatchKit Extension";
+			productReference = 6295880B1BD324150090A8CA /* ISSTracker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		629587CC1BD324150090A8CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ShellZero;
+				TargetAttributes = {
+					629587D31BD324150090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+					629587E71BD324150090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+						TestTargetID = 629587D31BD324150090A8CA;
+					};
+					629587F21BD324150090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+						TestTargetID = 629587D31BD324150090A8CA;
+					};
+					629587FB1BD324150090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+					6295880A1BD324150090A8CA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DQ8CH7U2S;
+					};
+				};
+			};
+			buildConfigurationList = 629587CF1BD324150090A8CA /* Build configuration list for PBXProject "ISSTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 629587CB1BD324150090A8CA;
+			productRefGroup = 629587D51BD324150090A8CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				629587D31BD324150090A8CA /* ISSTracker */,
+				629587E71BD324150090A8CA /* ISSTrackerTests */,
+				629587F21BD324150090A8CA /* ISSTrackerUITests */,
+				629587FB1BD324150090A8CA /* ISSTracker WatchKit App */,
+				6295880A1BD324150090A8CA /* ISSTracker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		629587D21BD324150090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629587E21BD324150090A8CA /* LaunchScreen.storyboard in Resources */,
+				629587DF1BD324150090A8CA /* Assets.xcassets in Resources */,
+				629587DD1BD324150090A8CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587E61BD324150090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587F11BD324150090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587FA1BD324150090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629588051BD324150090A8CA /* Assets.xcassets in Resources */,
+				629588031BD324150090A8CA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629588091BD324150090A8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629588191BD324150090A8CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		629587D01BD324150090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629587DA1BD324150090A8CA /* ViewController.swift in Sources */,
+				629587D81BD324150090A8CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587E41BD324150090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629587ED1BD324150090A8CA /* ISSTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629587EF1BD324150090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629587F81BD324150090A8CA /* ISSTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629588071BD324150090A8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629588171BD324150090A8CA /* NotificationController.swift in Sources */,
+				629588151BD324150090A8CA /* ExtensionDelegate.swift in Sources */,
+				629588131BD324150090A8CA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		629587EA1BD324150090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629587D31BD324150090A8CA /* ISSTracker */;
+			targetProxy = 629587E91BD324150090A8CA /* PBXContainerItemProxy */;
+		};
+		629587F51BD324150090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629587D31BD324150090A8CA /* ISSTracker */;
+			targetProxy = 629587F41BD324150090A8CA /* PBXContainerItemProxy */;
+		};
+		629587FF1BD324150090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629587FB1BD324150090A8CA /* ISSTracker WatchKit App */;
+			targetProxy = 629587FE1BD324150090A8CA /* PBXContainerItemProxy */;
+		};
+		6295880E1BD324150090A8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6295880A1BD324150090A8CA /* ISSTracker WatchKit Extension */;
+			targetProxy = 6295880D1BD324150090A8CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		629587DB1BD324150090A8CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629587DC1BD324150090A8CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		629587E01BD324150090A8CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629587E11BD324150090A8CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		629588011BD324150090A8CA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629588021BD324150090A8CA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6295881B1BD324160090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6295881C1BD324160090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6295881E1BD324160090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ISSTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.ISSTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		6295881F1BD324160090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ISSTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.ISSTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		629588221BD324160090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ISSTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "ISSTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.ISSTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		629588231BD324160090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ISSTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "ISSTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.ISSTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		629588261BD324160090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ISSTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.ISSTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		629588271BD324160090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ISSTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.ISSTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		629588291BD324160090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ISSTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.ISSTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ISSTracker.app/ISSTracker";
+			};
+			name = Debug;
+		};
+		6295882A1BD324160090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ISSTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.ISSTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ISSTracker.app/ISSTracker";
+			};
+			name = Release;
+		};
+		6295882C1BD324160090A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ISSTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.ISSTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ISSTracker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6295882D1BD324160090A8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ISSTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellzero.inception.ISSTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ISSTracker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		629587CF1BD324150090A8CA /* Build configuration list for PBXProject "ISSTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6295881B1BD324160090A8CA /* Debug */,
+				6295881C1BD324160090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6295881D1BD324160090A8CA /* Build configuration list for PBXNativeTarget "ISSTracker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6295881E1BD324160090A8CA /* Debug */,
+				6295881F1BD324160090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629588211BD324160090A8CA /* Build configuration list for PBXNativeTarget "ISSTracker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629588221BD324160090A8CA /* Debug */,
+				629588231BD324160090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629588251BD324160090A8CA /* Build configuration list for PBXNativeTarget "ISSTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629588261BD324160090A8CA /* Debug */,
+				629588271BD324160090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		629588281BD324160090A8CA /* Build configuration list for PBXNativeTarget "ISSTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629588291BD324160090A8CA /* Debug */,
+				6295882A1BD324160090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6295882B1BD324160090A8CA /* Build configuration list for PBXNativeTarget "ISSTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6295882C1BD324160090A8CA /* Debug */,
+				6295882D1BD324160090A8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 629587CC1BD324150090A8CA /* Project object */;
+}
