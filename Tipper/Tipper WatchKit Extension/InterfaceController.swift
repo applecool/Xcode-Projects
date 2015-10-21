@@ -21,7 +21,7 @@ class InterfaceController: WKInterfaceController {
     
     var mealTotal : Double = 0
     var tipTotal : Double = 0
-    
+    //update the array with more frequent and general values
     var mealCostArray = [10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 80.0, 100.0,150.0, 180.0, 200.0]
     var tipArray = [0.1, 0.15, 0.2, 0.25, 0.3]
     
@@ -76,6 +76,7 @@ class InterfaceController: WKInterfaceController {
         printButtons()
     }
     
+    //Fix needed.
     func printButtons(){
         var formatMeal = String(format: "%0.0f", mealCostArray[buttonMealNumber])
         var formatTip = String(format: "%0.0f", tipArray[buttonTipNumber]*100)

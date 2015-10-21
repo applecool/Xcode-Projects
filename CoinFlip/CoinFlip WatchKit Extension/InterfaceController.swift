@@ -45,6 +45,7 @@ class InterfaceController: WKInterfaceController {
         setCoinState()
     }
     
+    //animations and graphic images need to replace the plain text
     func setCoinState(){
         
         if coinValue == 0{

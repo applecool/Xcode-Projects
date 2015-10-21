@@ -68,6 +68,7 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
+    //arc4random_uniform doesnt populate in the auto-complete
     func randomizeNumber(){
         randomNumber = Int(arc4random_uniform(5))
         buttonCorrect = Int(arc4random_uniform(5))
@@ -102,7 +103,7 @@ class InterfaceController: WKInterfaceController {
     func printAnswer(){
         //lblLabelNumber.setText("\(randomNumber)") for debug
     }
-    
+    //use switch-case
     func printButtons(){
         
         if buttonCorrect == 0{
@@ -140,6 +141,7 @@ class InterfaceController: WKInterfaceController {
         triggerTaptic()
     }
     
+    //use switch-case
     func triggerTaptic(){
         
         if tapticEngineNumber == 0{

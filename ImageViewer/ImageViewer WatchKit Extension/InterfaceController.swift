@@ -40,7 +40,7 @@ class InterfaceController: WKInterfaceController {
         numberOfImage = value
         displayImage()
     }
-    
+    //The images doesnt fit on the screen. Fix needed
     func displayImage(){
         imgImage.setImage(UIImage(named: "\(numberOfImage)" + imageFileTypeJPG))
     }

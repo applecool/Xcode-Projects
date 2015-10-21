@@ -50,6 +50,7 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error) in
             
             if placemarks!.count > 0{
+                //Need to fix
                 let cPlacemarks = placemarks[0] as! CLPlacemark
                 self.displayLocation(cPlacemarks)
             }
