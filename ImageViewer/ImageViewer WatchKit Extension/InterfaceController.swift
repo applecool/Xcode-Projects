@@ -15,6 +15,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var sldSlider: WKInterfaceSlider!
     @IBOutlet var imgImage: WKInterfaceImage!
     
+    //needed png. 30X30
     var numberOfImage : Float = 0
     var imageFileTypeJPG : String = "jpg"
     
