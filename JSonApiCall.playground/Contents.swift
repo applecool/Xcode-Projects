@@ -148,13 +148,13 @@ extension JSON: SequenceType{
     
     :returns: Return a *generator* over the elements of this *sequence*.
     */
-    public func generate() -> GeneratorOf <(String, JSON)> {
+    public func generate() -> AnyGenerator <(String, JSON)> {
         switch self.type {
         case .Array:
             let array_ = object as! [AnyObject]
             var generate_ = array_.generate()
             var index_: Int = 0
-            return GeneratorOf<(String, JSON)> {
+            return AnyGenerator<(String, JSON)> {
                 if let element_: AnyObject = generate_.next() {
                     return ("\(index_++)", JSON(element_))
                 } else {
@@ -164,7 +164,7 @@ extension JSON: SequenceType{
         case .Dictionary:
             let dictionary_ = object as! [String : AnyObject]
             var generate_ = dictionary_.generate()
-            return GeneratorOf<(String, JSON)> {
+            return AnyGenerator<(String, JSON)> {
                 if let (key_: String, value_: AnyObject) = generate_.next() {
                     return (key_, JSON(value_))
                 } else {
@@ -172,7 +172,7 @@ extension JSON: SequenceType{
                 }
             }
         default:
-            return GeneratorOf<(String, JSON)> {
+            return AnyGeneratorf<(String, JSON)> {
                 return nil
             }
         }
@@ -193,7 +193,7 @@ extension String: SubscriptType {}
 extension JSON {
     
     /// If `type` is `.Array`, return json which's object is `array[index]`, otherwise return null json with error.
-    private subscript(#index: Int) -> JSON {
+    private subscript(index: Int) -> JSON {
         get {
             
             if self.type != .Array {
@@ -224,7 +224,7 @@ extension JSON {
     }
     
     /// If `type` is `.Dictionary`, return json which's object is `dictionary[key]` , otherwise return null json with error.
-    private subscript(#key: String) -> JSON {
+    private subscript(key: String) -> JSON {
         get {
             var returnJSON = JSON.nullJSON
             if self.type == .Dictionary {
@@ -248,7 +248,7 @@ extension JSON {
     }
     
     /// If `sub` is `Int`, return `subscript(index:)`; If `sub` is `String`,  return `subscript(key:)`.
-    private subscript(#sub: SubscriptType) -> JSON {
+    private subscript(sub: SubscriptType) -> JSON {
         get {
             if sub is String {
                 return self[key:sub as! String]
@@ -413,7 +413,7 @@ extension JSON: RawRepresentable {
         return self.object
     }
     
-    public func rawData(options opt: NSJSONWritingOptions = NSJSONWritingOptions(0), error: NSErrorPointer = nil) -> NSData? {
+    public func rawData(options opt: NSJSONWritingOptions = NSJSONWritingOptions(rawValue: 0), error: NSErrorPointer = nil) -> NSData? {
         return NSJSONSerialization.dataWithJSONObject(self.object, options: opt, error:error)
     }
     
@@ -441,7 +441,7 @@ extension JSON: RawRepresentable {
 
 // MARK: - Printable, DebugPrintable
 
-extension JSON: Printable, DebugPrintable {
+extension JSON: CustomStringConvertible, CustomDebugStringConvertible {
     
     public var description: String {
         if let string = self.rawString(options:.PrettyPrinted) {
@@ -464,7 +464,7 @@ extension JSON {
     public var array: [JSON]? {
         get {
             if self.type == .Array {
-                return map(self.object as [AnyObject]){ JSON($0) }
+                return map(self.object as! [AnyObject]){ JSON($0) }
             } else {
                 return nil
             }
