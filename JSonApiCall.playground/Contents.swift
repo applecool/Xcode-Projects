@@ -4,7 +4,7 @@ import UIKit
 import XCPlayground
 import Foundation
 
-XCPExecutionShouldContinueIndefinitely()
+XCPlaygroundPage.currentPage.needsIndefiniteExecution
 
 ///Error domain
 public let ErrorDomain: String! = "SwiftyJSONErrorDomain"
