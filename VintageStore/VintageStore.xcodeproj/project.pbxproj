@@ -14,6 +14,7 @@
 		62FF77E41C62FCDD00B3FA83 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FF77E31C62FCDD00B3FA83 /* ProductViewController.swift */; };
 		62FF77E61C630B2100B3FA83 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FF77E51C630B2100B3FA83 /* ContactViewController.swift */; };
 		62FF77E81C6394B000B3FA83 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FF77E71C6394B000B3FA83 /* ProductTableViewController.swift */; };
+		62FF77EA1C6478F600B3FA83 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FF77E91C6478F600B3FA83 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		62FF77E31C62FCDD00B3FA83 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		62FF77E51C630B2100B3FA83 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		62FF77E71C6394B000B3FA83 /* ProductTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		62FF77E91C6478F600B3FA83 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				62FF77E31C62FCDD00B3FA83 /* ProductViewController.swift */,
 				62FF77E51C630B2100B3FA83 /* ContactViewController.swift */,
 				62FF77E71C6394B000B3FA83 /* ProductTableViewController.swift */,
+				62FF77E91C6478F600B3FA83 /* Product.swift */,
 			);
 			path = VintageStore;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				62FF77E41C62FCDD00B3FA83 /* ProductViewController.swift in Sources */,
 				62FF77D21C62A37C00B3FA83 /* AppDelegate.swift in Sources */,
+				62FF77EA1C6478F600B3FA83 /* Product.swift in Sources */,
 				62FF77E81C6394B000B3FA83 /* ProductTableViewController.swift in Sources */,
 				62FF77E61C630B2100B3FA83 /* ContactViewController.swift in Sources */,
 			);
