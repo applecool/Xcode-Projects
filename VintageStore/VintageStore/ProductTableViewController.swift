@@ -39,6 +39,7 @@ class ProductTableViewController: UITableViewController {
         products = [product1,product2,product3,product4]
     }
     
+    //Returns the number of products in the whole inventory
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
         if let p = products {
@@ -49,6 +50,7 @@ class ProductTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
+        //Re using the created cells as the Product Cell
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell", forIndexPath: indexPath)
         
         let product = products?[indexPath.row]
@@ -63,6 +65,7 @@ class ProductTableViewController: UITableViewController {
         return cell
     }
     
+    // This function enables us to navigate from the Table View Controller to the Product View Controller.
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowProduct" {
             let productVC = segue.destinationViewController as? ProductViewController
