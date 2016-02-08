@@ -14,9 +14,10 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var productImageView: UIImageView!
     var product: Product?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //referencing the product image and the product
         if let p = product{
             productNameLabel.text = p.name
             if let i = p.productImage{
