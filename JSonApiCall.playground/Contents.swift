@@ -80,7 +80,7 @@ public struct JSON {
             _object = newValue
             switch newValue {
             case let number as NSNumber:
-                if number.isBool {
+                if number.boolValue {
                     _type = .Bool
                 } else {
                     _type = .Number
